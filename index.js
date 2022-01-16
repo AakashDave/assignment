@@ -1,4 +1,5 @@
 // https://api.openweathermap.org/data/2.5/weather?q=mumbai&units=metric&appid=4c4f1a79217f6b20c316514611afa2a8
+// set time
 let mydate=document.getElementById('date');
 let myday=document.getElementById('day');
 
@@ -51,11 +52,11 @@ let myday=document.getElementById('day');
                 if (`${arrData[0].main.temp}`>=25) {
                     detailPart.style.backgroundColor='#f5d020';
                     detailPart.style.backgroundImage ='linear-gradient(315deg, #fde153 0%, #ff6a41 74%)';
-                    tempPart.style.backgroundImage=`linear-gradient(rgba(255,255,255,0.3),rgba(0,0,0,0.7)),url('../img/img2.jpg')`;
+                    tempPart.style.backgroundImage=`linear-gradient(rgba(255,255,255,0.3),rgba(0,0,0,0.7)),url('img2.jpg')`;
                 }else{
                     detailPart.style.backgroundColor='#b1bfd8';
                     detailPart.style.backgroundImage ='linear-gradient(315deg, #b1bfd8 0%, #49669c 74%)';
-                    tempPart.style.backgroundImage=`linear-gradient(rgba(255,255,255,0.3),rgba(0,0,0,0.7)),url('../img/img.jpg')`;
+                    tempPart.style.backgroundImage=`linear-gradient(rgba(255,255,255,0.3),rgba(0,0,0,0.7)),url('img.jpg')`;
                 }
                 showTemp.innerHTML=`${arrData[0].main.temp}`;
                 minTemp.innerHTML=`${arrData[0].main.temp_min}`;

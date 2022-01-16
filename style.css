@@ -28,14 +28,12 @@ border-bottom: 2px solid black;
     color: rgb(233, 233, 233);
 }
 .temp-part{
-    background-image:linear-gradient(rgba(255,255,255,0.3),rgba(0,0,0,0.7)),url('../img/img.jpg');
+    background-image:linear-gradient(rgba(255,255,255,0.3),rgba(0,0,0,0.7)),url('img.jpg');
     background-position: center;
     background-size: cover;
     width: 70%;
 }
 /* Medium devices (tablets, less than 992px) */
-
-
 @media (max-width: 991.98px) {
     .detail-part{
         padding: 8px;
@@ -44,6 +42,8 @@ border-bottom: 2px solid black;
         font-size: 12px;
     }
  }
+/* Medium devices (tablets, less than 576px) */
+
  @media (max-width: 575.98px) { 
     .detail-part{
         padding: 3px;
